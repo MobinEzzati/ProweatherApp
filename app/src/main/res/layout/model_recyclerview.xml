@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="12dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        >
+        <ImageView
+            android:id="@+id/iv_model_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/newyork">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_model_city"
+            android:text="NEW YORK"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/gray_light"
+            />
+        <TextView
+            android:id="@+id/tv_model_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_model_city"
+            android:text="us"
+            android:textColor="@color/gray_light"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_model_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:layout_marginTop="43dp"
+            android:text="25"
+            android:textColor="@color/gray_light"
+            android:background="@drawable/corner"
+            android:layout_marginLeft="300dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
